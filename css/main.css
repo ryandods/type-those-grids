@@ -2,6 +2,7 @@ html {
   box-sizing: border-box;
   font-family: 'Merriweather', serif;
   font-weight: normal;
+  line-height: 1.5rem;
 }
 
 *, *::before, *::after {
@@ -11,3 +12,48 @@ html {
 /*
 font-family: 'Merriweather', serif;
 */
+
+h1 {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.8rem;
+  margin: 1.5rem 1rem;
+}
+
+h2 {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+.container {
+  position: relative;
+  color: #fff
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  padding: 1.5rem 1rem;
+}
+
+dt {
+  font-style: italic;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+}
+
+.main-grid {
+  list-style-type: none;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
+  gap: .75;
